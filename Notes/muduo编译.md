@@ -18,8 +18,10 @@ git checkout cpp17
 ```bash
 ./build.sh install
 ```
+若提示权限不够，先使用chmod命令对shell脚本赋予权限，再执行
+`chmod 777 ./build.sh`
 
-## 4. 修改ttcp_asio_async.cc
+## 4. 修改`ttcp_asio_async.cc`
 
 ```c++
   TtcpServerConnection(const tcp::socket::executor_type& executor)
